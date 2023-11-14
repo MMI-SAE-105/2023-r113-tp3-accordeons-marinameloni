@@ -9,17 +9,38 @@
   </head>
   <body>
 <accordeon>
-  <section  x-data="{ open: false }">
-    <button>bouton 1</button>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum beatae, eius modi nesciunt possimus est accusamus praesentium sapiente omnis, consectetur iste, optio dolore sunt harum! Unde quis inventore libero!</p>
+  <section>
+    <div x-data="{ open: false }">
+      <button @click="open = ! open">Button 1</button>
+    
+      <div x-show="open">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum beatae, eius modi nesciunt possimus est
+          accusamus praesentium sapiente omnis, consectetur iste, optio dolore sunt harum! Unde quis inventore libero!</p>
+      </div>
+    </div>
+  
   </section>
-  <section  x-data="{ open: false }">
-    <button>bouton 2</button>
-    <p>Doloremque neque porro sed dolor vitae molestiae totam enim? Obcaecati doloremque nobis ad beatae eum ipsa blanditiis corrupti, sed deleniti molestias ipsum est, expedita nulla illo dolores vitae perspiciatis dolore.</p>
+  <section>
+    <div x-data="{ open: false }">
+      <button @click="open = ! open">Button 2</button>
+    
+      <div x-show="open">
+        <p>Doloremque neque porro sed dolor vitae molestiae totam enim? Obcaecati doloremque nobis ad beatae eum ipsa blanditiis
+              corrupti, sed deleniti molestias ipsum est, expedita nulla illo dolores vitae perspiciatis dolore.</p>
+
+      </div>
+    </div>
+    
   </section>
-  <section  x-data="{ open: false }">
-    <button>bouton 3</button>
-    <p>Illo voluptatibus necessitatibus at excepturi fugiat voluptas quam iusto, odio ad, vel velit odit temporibus et tempore, dignissimos alias fuga voluptates ipsum perferendis ut dolor? Culpa velit delectus possimus atque!</p>
+  <section>
+    <div x-data="{ open: false }">
+      <button @click="open = ! open">Button 3</button>
+    
+      <div x-show="open">
+      <p>Illo voluptatibus necessitatibus at excepturi fugiat voluptas quam iusto, odio ad, vel velit odit temporibus et
+        tempore, dignissimos alias fuga voluptates ipsum perferendis ut dolor? Culpa velit delectus possimus atque!</p>
+      </div>
+    </div>
   </section>
 </accordeon>
     <h1>Accordéon avec des booléens</h1>
