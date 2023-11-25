@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
@@ -16,14 +17,14 @@
     <div x-data="{ open: 1 }">
       <section>
         <button @click="open = 1">1</button>
-        <div x-show="open === 1" x-transition.scale.origin.top.duration.500ms>
+        <div x-show="open === 1" x-collapse.duration.300ms>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, deleniti ut? Rem id aliquid officiis odio
             nobis ratione rerum fugit nihil. Id nulla modi laborum explicabo ut beatae accusantium reprehenderit!</p>
         </div>
       </section>
       <section>
         <button @click="open = 2">2</button>
-        <div x-show="open === 2" x-transition.scale.origin.top.duration.500ms>
+        <div x-show="open === 2" x-collapse.duration.300ms>
           <p>Ratione consequuntur alias quia pariatur voluptatibus! Quibusdam earum, adipisci repellendus eum nemo
             consectetur. Quae placeat id ipsum quis accusamus pariatur sit iusto saepe magnam? Ab sunt itaque possimus
             asperiores illo?</p>
@@ -31,7 +32,7 @@
       </section>
       <section>
         <button @click="open = 3">3</button>
-        <div x-show="open === 3" x-transition.scale.origin.top.duration.500ms>
+        <div x-show="open === 3" x-collapse.duration.300ms>
           <p>Aliquid facere voluptate, perspiciatis error nesciunt excepturi obcaecati atque tenetur magnam rem
             voluptatum voluptates accusamus distinctio harum ad earum, nemo reprehenderit. Aperiam cupiditate autem
             dignissimos optio quos, corrupti recusandae eligendi!</p>
